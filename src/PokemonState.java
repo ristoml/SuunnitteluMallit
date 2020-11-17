@@ -3,5 +3,8 @@ public abstract class PokemonState {
         p.changeState(s);
     };
     void action(Pokemon p){};
-    
+    void accept(Visitor visitor) {
+       visitor.visit(this);
+    }
+        
 }

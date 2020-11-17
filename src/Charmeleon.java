@@ -4,4 +4,7 @@ public class Charmeleon extends PokemonState{
         System.out.println("Pokemon ampuu");
         changeState(p, new Charizad());
     }
+    public void accept(BonusVisitor visitor) {
+        visitor.visit(this);
+    }
 }

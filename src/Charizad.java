@@ -4,5 +4,8 @@ public class Charizad extends PokemonState {
         System.out.println("Pokemon lentää");
         changeState(p, new Charmander());
     }
+    public void accept(BonusVisitor visitor) {
+        visitor.visit(this);
+    }
     
 }

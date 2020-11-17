@@ -5,4 +5,8 @@ public class Charmander extends PokemonState{
         changeState(p, new Charmeleon());
     }
     
+    public void accept(BonusVisitor visitor) {
+        visitor.visit(this);
+    }
+    
 }
